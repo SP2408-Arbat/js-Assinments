@@ -1,0 +1,37 @@
+<html>
+    <head>
+<title>
+    <h1>Current Date</h1>
+</title>
+<script>
+    function f1()
+    {
+        /*var d=new Date();
+        var dd=d.getDay();
+        var mm=d.getMonth(;)
+        var yy=d.getFullYear();
+        document.write(dd+":"+mm+":"+yy);*/
+
+        var d = new Date();
+var date = d. getDate();
+var month = d. getMonth() + 1; // Since getMonth() returns month from 0-11 not 1-12.
+var year = d. getFullYear();
+var dateStr = date + "/" + month + "/" + year;
+var s2=month+"-"+date+"-"+year;
+var s3=date + "-" + month + "-" + year;
+document.write("<h1 align='center'>Date Formate</h1>");
+document. write(dateStr);
+document.write("<br>");
+document. write(s2);
+document.write("<br>");
+document. write(s3);
+document.write("<br>");
+    }
+</script>
+    </head>
+    <body>
+        <h1 align-="center">Show Date</h1>
+
+        <button type="button" onclick='f1()''>Show Date</button>
+    </body>
+</html>
