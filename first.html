@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>This is my First Page</title>
+    </head>
+    <body>
+     <h1>My First Page</h1>        
+     <script>
+         var d=new Date();
+         var day=d.getDay();
+         var weekdays=['sunday','Monday','Tuesday','Wednesday','Thirsday','Friday','Saturday']
+         var hours=d.getHours();
+         var ampm=hours>=12?'PM':'AM';
+         hours=hours%12;
+         hours=hours?hours:12;
+         var minutes=d.getMinutes();
+         minutes=minutes<10?'0'+minutes:minutes;
+         var myTime=hours+" "+ampm+":"+minutes+":"+d.getMilliseconds();
+         document.write("Today is:"+weekdays[day]);
+         document.write("<br>");
+         document.write("\n Current time is:"+myTime);
+        
+
+
+            
+        </script>
+
+    </body>
+</html>
